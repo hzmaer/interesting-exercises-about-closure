@@ -1,7 +1,7 @@
 # interesting-exercises-about-closure
 关于闭包的有趣习题
 
-function fun(n,o) {
+1.function fun(n,o) {
 
  console.log(o)
  
