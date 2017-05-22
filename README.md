@@ -44,3 +44,23 @@ var obj = {
 }
 
 alert(obj.dose().call(this))
+
+3.var name = 'global';
+
+var obj = {
+
+	name : 'obj',
+	
+	dose : function(){
+	
+		this.name = 'dose';
+		
+		return function(){
+		
+			return this.name;
+			
+		}.bind(this)
+	}
+}
+
+alert(obj.dose().call(this))
